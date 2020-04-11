@@ -1,15 +1,20 @@
 package entities;
 
-public class Room {
+import java.util.Date;
+
+public class Client_ex1 {
 	
 	private String name;
 	private String email;
-	private int room;
+	private Date birthDate;
 	
-	public Room(String name, String email, int room) {
+	public Client_ex1() {
+	}
+
+	public Client_ex1(String name, String email, Date birthDate) {
 		this.name = name;
 		this.email = email;
-		this.room = room;
+		this.birthDate = birthDate;
 	}
 
 	public String getName() {
@@ -28,21 +33,11 @@ public class Room {
 		this.email = email;
 	}
 
-	public int getRoom() {
-		return room;
+	public Date getBirthDate() {
+		return birthDate;
 	}
 
-	public void setRoom(int room) {
-		this.room = room;
+	public void setBirthDate(Date birthDate) {
+		this.birthDate = birthDate;
 	}
-	
-	public String toString() {
-		return 
-		room
-		+ ": "
-		+ name
-		+ ", "
-		+ email;
-	}
-
 }

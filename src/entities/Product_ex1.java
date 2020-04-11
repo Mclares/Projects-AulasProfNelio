@@ -1,11 +1,14 @@
 package entities;
 
-public class productvetor2 {
+public class Product_ex1 {
 	
 	private String name;
-	private double price;
+	private Double price;
 	
-	public productvetor2(String name, double price) {
+	public Product_ex1() {
+	}
+
+	public Product_ex1(String name, Double price) {
 		this.name = name;
 		this.price = price;
 	}
@@ -18,12 +21,11 @@ public class productvetor2 {
 		this.name = name;
 	}
 
-	public double getPrice() {
+	public Double getPrice() {
 		return price;
 	}
 
-	public void setPrice(double price) {
+	public void setPrice(Double price) {
 		this.price = price;
 	}
-
 }
